@@ -27,12 +27,13 @@ body {
     text-transform: uppercase;
 }
 
-#cabecalho p {
+#logo{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 25px;
     font-weight: bold;
     text-decoration: underline overline;
     cursor: pointer;
+    color: #FFFFFF;
 }
 
 .pesquisa {
@@ -136,30 +137,117 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 148px;
+    margin: 148px 60px 148px 60px;
 }
 
-.card-esquerdadicas{
+.card-esquerdadicas {
     width: 50%;
-}
-
-.card-esquerdadicas h1{
-    font-size: 31px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: bold;
 }
 
-.card-esquerdadicas h2, p{
+.card-esquerdadicas h1 {
     font-size: 28px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin-block-start: 0px;
 }
 
-.card-direitadicas{
+.card-esquerdadicas h2,
+.card-esquerdadicas p {
+    font-size: 24px;
+    color: #5C5C5C;
+}
+
+.card-direitadicas {
     width: 50%;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
-.card-direitadicas img{
+.card-direitadicas img {
     height: 614px;
     border-radius: 20px;
+}
+
+.rodape {
+    background-color: #000000;
+}
+
+.rodape-titulo {
+    text-align: center;
+    margin: 50px 0px 50px 0px;
+}
+
+.rodape-titulo h1 {
+    color: #FFFFFF;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 50px 0px 50px 0px;
+}
+
+.rodape-pesquisa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape-pesquisa input{
+    height: 58px;
+    width: 384px;
+    background-color: #000000;
+    border: 1px solid #FFFFFF;
+    outline: none;
+    border-radius: 10px;
+    color: #C4C4C4;
+    font-size: 24px;
+    padding-left: 20px;
+}
+
+.botao-assinar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 59px;
+    width: 230px;
+    background-color: #EBC154;
+    border-radius: 10px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.botao-assinar p{
+    font-size: 24px;
+    color: #FFFFFF;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.rodape-menu{
+    margin-top: 100px;
+}
+
+.rodape-grupo-menu{
+    display: flex;
+    color: #FFFFFF;
+    justify-content: space-between;
+}
+
+.grupo-itens ul{
+    display: flex;
+    margin-bottom: 0px;
+}
+
+.grupo-itens li{
+    margin: 46px;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    list-style: none;
+    cursor: pointer;
+}
+
+.rodape-linha{
+    margin: 20px;
+    height: 25px;
+    width: 100%;
+    background-color: #FFFFFF;
 }
