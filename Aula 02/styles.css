@@ -223,13 +223,28 @@ body {
 }
 
 .rodape-menu{
-    margin-top: 100px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    margin-left: 30px;
 }
 
 .rodape-grupo-menu{
     display: flex;
     color: #FFFFFF;
     justify-content: space-between;
+    align-items: center;
+}
+
+.grupo-logo{
+    margin-left: 30px;
+}
+
+.grupo-logo p{
+    margin-block-end: 0px;
+}
+
+.grupo-itens{
+    margin-right: 50px;
 }
 
 .grupo-itens ul{
@@ -238,16 +253,66 @@ body {
 }
 
 .grupo-itens li{
-    margin: 46px;
+    margin-left: 50px;
     font-size: 18px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     list-style: none;
     cursor: pointer;
+    font-weight: bolder;
+}
+
+.grupo-item-selecionado{
+    color: #EBC154;
 }
 
 .rodape-linha{
-    margin: 20px;
-    height: 25px;
+    margin-top: 0px;
+    height: 1px;
     width: 100%;
     background-color: #FFFFFF;
+}
+
+.rodape-sociais{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px 50x 0px;
+}
+
+.icone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EBC154;
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    fill: #FFFFFF;
+    margin: 25px;
+    cursor: pointer;
+}
+
+.icone svg{
+    width: 50px;
+    height: 50px;
+}
+
+
+.grupo-login{
+    display: flex;
+}
+
+.lado-esquerdo {
+    height: 832px;
+    width: 40%;
+    background-size: cover;
+    background-image: url('./Imagens/dog_preto.jpg');
+    text-align: center;
+}
+
+.lado-esquerdo p{
+    font-size: 34px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #000000;
+    margin-top: 50px;
 }
