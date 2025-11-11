@@ -297,14 +297,15 @@ body {
     height: 50px;
 }
 
+/*Login*/
 
 .grupo-login{
     display: flex;
 }
 
 .lado-esquerdo {
-    height: 832px;
-    width: 40%;
+    height: 1000px;
+    width: 50%;
     background-size: cover;
     background-image: url('./Imagens/dog_preto.jpg');
     text-align: center;
@@ -315,4 +316,74 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #000000;
     margin-top: 50px;
+}
+
+.lado-direito {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #000000;
+}
+.lado-direito h1{
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 100px; /*espaço após o título*/
+}
+
+.lado-direito p{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 14px; 
+}
+
+.botoes {
+    /*tamanho e aparência*/
+    height: 52px;
+    width: 379px;
+    border-radius: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 15px;
+
+    /*estilo*/
+    border: 1px solid #000000;
+    color: #000000;
+
+    /*alinhar título e img*/
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.botoes p{
+    font-size: 24px;
+    color: #000000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.pesquisa-google {
+    background-image: url('./Imagens/google.png');
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+}
+
+.pesquisa-apple {
+    background-image: url('./Imagens/apple.png');
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+}
+
+.pesquisa-email {
+    background-image: url('./Imagens/email.png');
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
 }
