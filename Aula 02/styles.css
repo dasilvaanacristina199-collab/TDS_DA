@@ -1,3 +1,8 @@
+@font-face{
+    font-family:'Kaushan';
+    src: url('./Fontes/Kaushan_Script/KaushanScript-Regular.ttf');
+}
+
 body {
     margin: 0px;
 }
@@ -27,11 +32,10 @@ body {
     text-transform: uppercase;
 }
 
-#logo{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 25px;
-    font-weight: bold;
-    text-decoration: underline overline;
+#logo {
+    font-family: 'Kaushan';
+    font-size: 30px;
+    /*text-decoration: underline overline;*/
     cursor: pointer;
     color: #FFFFFF;
 }
@@ -184,13 +188,13 @@ body {
     padding: 50px 0px 50px 0px;
 }
 
-.rodape-pesquisa{
+.rodape-pesquisa {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.rodape-pesquisa input{
+.rodape-pesquisa input {
     height: 58px;
     width: 384px;
     background-color: #000000;
@@ -202,7 +206,7 @@ body {
     padding-left: 20px;
 }
 
-.botao-assinar{
+.botao-assinar {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -214,7 +218,7 @@ body {
     cursor: pointer;
 }
 
-.botao-assinar p{
+.botao-assinar p {
     font-size: 24px;
     color: #FFFFFF;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -222,37 +226,37 @@ body {
     text-transform: uppercase;
 }
 
-.rodape-menu{
+.rodape-menu {
     margin-top: 50px;
     margin-bottom: 0px;
     margin-left: 30px;
 }
 
-.rodape-grupo-menu{
+.rodape-grupo-menu {
     display: flex;
     color: #FFFFFF;
     justify-content: space-between;
     align-items: center;
 }
 
-.grupo-logo{
+.grupo-logo {
     margin-left: 30px;
 }
 
-.grupo-logo p{
+.grupo-logo p {
     margin-block-end: 0px;
 }
 
-.grupo-itens{
+.grupo-itens {
     margin-right: 50px;
 }
 
-.grupo-itens ul{
+.grupo-itens ul {
     display: flex;
     margin-bottom: 0px;
 }
 
-.grupo-itens li{
+.grupo-itens li {
     margin-left: 50px;
     font-size: 18px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -261,25 +265,25 @@ body {
     font-weight: bolder;
 }
 
-.grupo-item-selecionado{
+.grupo-item-selecionado {
     color: #EBC154;
 }
 
-.rodape-linha{
+.rodape-linha {
     margin-top: 0px;
     height: 1px;
     width: 100%;
     background-color: #FFFFFF;
 }
 
-.rodape-sociais{
+.rodape-sociais {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 50px 0px 50x 0px;
 }
 
-.icone{
+.icone {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -292,98 +296,82 @@ body {
     cursor: pointer;
 }
 
-.icone svg{
+.icone svg {
     width: 50px;
     height: 50px;
 }
 
 /*Login*/
 
-.grupo-login{
+.grupo-login {
     display: flex;
-}
-
-.lado-esquerdo {
-    height: 1000px;
-    width: 50%;
-    background-size: cover;
-    background-image: url('./Imagens/dog_preto.jpg');
+    height: 1020px;
     text-align: center;
 }
 
-.lado-esquerdo p{
-    font-size: 34px;
+.grupo-login h1 {
+    margin-top: 100px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #000000;
-    margin-top: 50px;
+    font-size: 50px;
+}
+
+.lado-esquerdo {
+    width: 50%;
+    background-image: url(./Imagens/dog_preto.jpg);
+    background-size: cover;
 }
 
 .lado-direito {
     width: 50%;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #000000;
-}
-.lado-direito h1{
-    font-size: 38px;
-    font-weight: bold;
-    margin-bottom: 100px; /*espaço após o título*/
-}
-
-.lado-direito p{
-    margin-top: 15px;
-    margin-bottom: 10px;
-    font-size: 14px; 
 }
 
 .botoes {
-    /*tamanho e aparência*/
-    height: 52px;
-    width: 379px;
-    border-radius: 30px;
-    background-color: transparent;
-    cursor: pointer;
-    font-weight: bold;
-    margin-bottom: 15px;
+    margin: 150px 300px 0px 300px;
+    /*ir para o meio da tela*/
+}
 
-    /*estilo*/
-    border: 1px solid #000000;
-    color: #000000;
-
-    /*alinhar título e img*/
+.botao {
     display: flex;
+    justify-content: center;
+    /*centro*/
     align-items: center;
-    justify-content: flex-start;
-    text-align: left;
+    /*linha e img centralizados*/
+    height: 60px;
+    border: 1px solid #000000;
+    border-radius: 40px;
+    margin-bottom: 20px;
+    cursor: pointer;
 }
 
-.botoes p{
-    font-size: 24px;
-    color: #000000;
+.botao img {
+    height: 50px;
+    margin-right: 25px;
+}
+
+.botao p {
+    font-size: 16px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: bold;
 }
 
-.pesquisa-google {
-    background-image: url('./Imagens/google.png');
-    width: 20px;
-    height: 20px;
-    margin-right: 15px;
+.entrar {
+    font-size: 13px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.pesquisa-apple {
-    background-image: url('./Imagens/apple.png');
-    width: 20px;
-    height: 20px;
-    margin-right: 15px;
+.botao-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: #000000;
+    margin: 170px 300px 0px 300px;
+    border-radius: 50px;
+    text-decoration: none;
 }
 
-.pesquisa-email {
-    background-image: url('./Imagens/email.png');
-    width: 20px;
-    height: 20px;
-    margin-right: 15px;
+.botao-login p {
+    color: #FFFFFF;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    cursor: pointer;
 }
