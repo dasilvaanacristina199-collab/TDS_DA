@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+</head>
+
+<body>
+    
+    <input id='campo1' type="text">
+    <input id='campo2' type="text">
+    <button onclick="soma()">+</button>
+    <button onclick="subtracao()">-</button>
+    <button onclick="multiplicacao()">*</button>
+    <button onclick="divisao()">/</button>
+    <p id="resultado"> Resultado </p>
+
+
+    <script>
+
+        function soma(){
+        var pagina = document;
+
+        var campo1 = pagina.getElementById('campo1').value;
+        var campo2 = pagina.getElementById('campo2').value;
+        var resultado = pagina.getElementById('resultado');
+
+        resultado.innerHTML = 'A soma dos dois valores é: ' + (Number(campo1) + Number(campo2));
+        }
+
+        soma()
+
+    </script>
+
+</body>
+
+</html>
