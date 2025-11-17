@@ -25,10 +25,42 @@
         var campo2 = pagina.getElementById('campo2').value;
         var resultado = pagina.getElementById('resultado');
 
-        resultado.innerHTML = 'A soma dos dois valores é: ' + (Number(campo1) + Number(campo2));
+        resultado.innerHTML = 'A soma dos dois valores é: ' + (Number(campo1) + Number(campo2)).toFixed(2);
         }
-
         soma()
+
+        function subtracao(){
+        var pagina = document;
+
+        var campo1 = pagina.getElementById('campo1').value;
+        var campo2 = pagina.getElementById('campo2').value;
+        var resultado = pagina.getElementById('resultado');
+
+        resultado.innerHTML = 'A subtracao dos dois valores é: ' + (Number(campo1) - Number(campo2)).toFixed(2);
+        }
+        subtracao()
+
+        function multiplicacao(){
+        var pagina = document;
+
+        var campo1 = pagina.getElementById('campo1').value;
+        var campo2 = pagina.getElementById('campo2').value;
+        var resultado = pagina.getElementById('resultado');
+
+        resultado.innerHTML = 'A multiplicacao dos dois valores é: ' + (Number(campo1) * Number(campo2)).toFixed(2);
+        }
+        multiplicacao()
+
+        function divisao(){
+        var pagina = document;
+
+        var campo1 = pagina.getElementById('campo1').value;
+        var campo2 = pagina.getElementById('campo2').value;
+        var resultado = pagina.getElementById('resultado');
+
+        resultado.innerHTML = 'A divisao dos dois valores é: ' + (Number(campo1) / Number(campo2)).toFixed(2);
+        }
+        divisao()
 
     </script>
 
