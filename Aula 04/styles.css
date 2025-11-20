@@ -1,3 +1,23 @@
-body{
+body {
     text-align: center;
+    background: #020024;
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(55, 12, 61, 1) 35%, rgba(72, 14, 72, 1) 100%);
+    
+}
+
+.fundo {
+    height: 1080px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#itens li {
+    list-style: none;
+    color: aliceblue;
+}
+
+.campos{
+    display:  flex;
+    justify-content: center;
 }
