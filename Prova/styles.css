@@ -7,34 +7,54 @@ body {
     margin: 0px;
 }
 
-.fundao{
-    /* display: flex; */
-    /* align-items: center;
-    justify-content: center; */
-    /* height: 442px; */
-    /* width: 100%; */
-    background-color: #d1d3d4;
-    border: solid 2px black;
-}
-
 #cabecalho {
-    /* display: flex;
+    display: flex;
     justify-content: space-between;
     align-content: center;
-    align-items: center; */
-    background-image: url(./Imagens/Cabeçalho\ novo.png);
-    /* background-size: 1920px auto; */
-    height: 1080px;
-    width: 100%;
-    /* padding: 70px 50px 70px 50px; */
+    align-items: center;
+    background-color: #FFFFFF;
+    color: #000000;
+    height: 100px;
+    padding: 8px 50px 8px 50px;
 }
 
+#cabecalho img {
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
 
 #cabecalho h1 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    font-family: 'gameplay';
     font-size: 25px;
-    font-weight: bold;
-    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+}
+
+/*img fundo*/
+.fundao {
+    background-image: url(./Imagens/Cabeçalho\ novo.png);
+    margin: -13px 0px -13px 0px;
+    height: 1080px;
+    width: 100%;
+}
+
+.fundao p {
+    display: flex;
+    font-family: 'gameplay';
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.menus-grupo {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0px 50px 0px;
 }
 
 
@@ -48,7 +68,7 @@ body {
     padding: 10px;
     margin-top: -30px;
     background-color: red;
-    margin: -30px 12.8%  0px 12.8%;
+    margin: -30px 12.9%  0px 12.9%;
     background-color: #d1d3d4;
 }
 
@@ -69,11 +89,14 @@ body {
     text-transform: uppercase;
     color: #000;
 }
+
 .menus-grupo {
     display: flex;
     justify-content: space-around;
     margin: 50px 0px 50px 0px;
 }
+
+
 
 /*tecnologia*/
 .card-tec {
@@ -84,6 +107,7 @@ body {
     transition-duration: 0.1s;
     transition-delay: 0.1s;
     border: solid 2px black;
+    opacity: 85%;
 }
 
 .card-tec:hover {
@@ -93,11 +117,12 @@ body {
 }
 
 .card-tec p {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
-    color: #FFFFFF;
+    color: #d1d3d4;
     margin-left: 20px;
     padding-top: 300px;
+    opacity: 100%;
 }
 
 /*musica*/
@@ -109,6 +134,7 @@ body {
     transition-duration: 0.1s;
     transition-delay: 0.1s;
     border: solid 2px black;
+    opacity: 85%;
 }
 
 .card-musica:hover {
@@ -118,9 +144,9 @@ body {
 }
 
 .card-musica p {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
-    color: #FFFFFF;
+    color: #000000;
     margin-left: 20px;
     padding-top: 300px;
 }
@@ -134,6 +160,7 @@ body {
     transition-duration: 0.1s;
     transition-delay: 0.1s;
     border: solid 2px black;
+    opacity: 85%;
 }
 
 .card-moda:hover {
@@ -143,9 +170,9 @@ body {
 }
 
 .card-moda p {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
-    color: #FFFFFF;
+    color: #d1d3d4;
     margin-left: 20px;
     padding-top: 300px;
 }
@@ -159,6 +186,7 @@ body {
     transition-duration: 0.1s;
     transition-delay: 0.1s;
     border: solid 2px black;
+    opacity: 85%;
 }
 
 .card-filmes:hover {
@@ -168,9 +196,143 @@ body {
 }
 
 .card-filmes p {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
-    color: #FFFFFF;
+    color: #000000;
     margin-left: 20px;
     padding-top: 300px;
+}
+
+/*segunda parte*/
+.sobre-site {
+    display: flex;
+    justify-content: center;
+    margin-top: 148px;
+    margin: 148px 60px 148px 60px;
+    border: solid 1px #d1d3d4;
+    border-radius: 3px;
+    background-color: #d1d3d4;
+}
+
+/*esquerda*/
+.card-esquerda {
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-esquerda h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-block-start: 0px;
+}
+
+.card-esquerda p {
+    font-size: 24px;
+    color: #5C5C5C;
+}
+
+/*direita*/
+.card-direita {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-direita img {
+    height: 614px;
+    border-radius: 20px;
+}
+
+/*rodape*/
+.rodape {
+    align-content: center;
+    align-items: center;
+    background-color: #d1d3d4;
+}
+
+.rodape-titulo {
+    text-align: center;
+    margin: 50px 0px 50px 0px;
+}
+
+.rodape-titulo h1 {
+    color: #000000;
+    font-family: 'gameplay';
+    padding: 50px 0px 50px 0px;
+}
+
+.rodape-pesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*email*/
+.rodape-pesquisa input {
+    height: 58px;
+    width: 384px;
+    background-color: #d1d3d4;
+    border: 1px solid #000000;
+    outline: none;
+    border-radius: 10px;
+    color: #000000;
+    font-size: 24px;
+    padding-left: 20px;
+}
+
+/*botao assinar*/
+.botao-assinar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 59px;
+    width: 230px;
+    background-color: #febac2;
+    border-radius: 10px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.botao-assinar p {
+    font-size: 24px;
+    color: #000000;
+    font-family: 'gameplay';
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/*menu*/
+.rodape-menu {
+    margin-top: 50px;
+    margin-bottom: 0px;
+    margin-left: 30px;
+}
+
+.rodape-grupo-menu {
+    display: flex;
+    color: #000000;
+    justify-content: center;
+    align-items: center;
+}
+
+.grupo-itens {
+    margin-right: 50px;
+}
+
+.grupo-itens ul {
+    display: flex;
+    margin-bottom: 0px;
+}
+
+.grupo-itens li {
+    margin-left: 50px;
+    font-size: 18px;
+    font-family: 'gameplay';
+    list-style: none;
+    cursor: pointer;
+}
+
+.grupo-item-selecionado {
+    color: #5C5C5C;
 }
